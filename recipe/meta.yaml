@@ -22,7 +22,7 @@ requirements:
     - poetry
   run:
     - dataclasses >=0.7,<0.8
-    - flake8 >=3.8.3,<4.0.0
+    - flake8 >=3.6,<5
     - python >=3.6
 
 test:
