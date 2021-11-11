@@ -1,5 +1,5 @@
 {% set name = "flake8-use-pathlib" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fe178e060f2185afc6e71adaa19598e0dc90e65bb09b1ab9b729673dc4e8d7cc
+  sha256: 844023d3e1ed55dc183bfd5421c4887f1d8242a85f183d6b4849567da6f9ee5e
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - poetry
   run:
     - dataclasses >=0.7,<0.8
-    - flake8 >=3.8.3,<4.0.0
+    - flake8 >=3.6,<5
     - python >=3.6
 
 test:
