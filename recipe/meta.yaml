@@ -11,19 +11,18 @@ source:
   sha256: 844023d3e1ed55dc183bfd5421c4887f1d8242a85f183d6b4849567da6f9ee5e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
     - poetry
   run:
-    - dataclasses >=0.7,<0.8
     - flake8 >=3.6,<5
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
