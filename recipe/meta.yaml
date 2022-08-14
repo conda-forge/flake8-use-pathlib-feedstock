@@ -17,12 +17,12 @@ build:
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python >=3.7
-    - poetry
+    - poetry-core
   run:
-    - flake8 >=3.6,<5
     - python >=3.7
+    - flake8 >=3.6
 
 test:
   imports:
